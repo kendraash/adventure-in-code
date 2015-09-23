@@ -1,0 +1,20 @@
+{ "posts": [{
+  "date": "09.22.2015",
+  "author": "Kendra Ash ",
+  "title": "Travels to the Firebase",
+  "text": "The name 'firebase' instills fear. It's an intimidating name. Kendra had no fear. She dashed ahead. When she got there, it was a bit anti-climatical. It wasn't dangerous at all. It was rather easy. If only there had been a dragon. Kendra really really wanted to see a dragon.",
+  "image": "https://images.unsplash.com/uploads/1412202697225758d7246/1f510c30?q=80&fm=jpg&s=443f881cfd6e4a0893480ec7e29cf51e"
+  }, {
+  "date": "09.20.2015",
+  "author": "Rachael Berecka",
+  "title": "The trouble with handlebars...",
+  "text": "Handlebars. Handlebars everywhere. You would think life in Portland would have prepared her for runaway facial hair. It didn't. Handlebars were hard to grasp. They muffled sound and made  communication hard. It didn't help it was a completely different language. So she rolled up her sleeves, got some wax, and got to work. Expect her handlebar lexicon anyday now.",
+  "image": "https://images.unsplash.com/photo-1414542158951-f32d326a4820?q=80&fm=jpg&s=7a775fcac16e52b7c0fcaed75c0e52b2"
+  }, {
+  "date": "09.18.2015",
+  "author": "Kendra and Rachael",
+  "title": "Emberland",
+  "text": "They were tasked with going to Emberland. The high council at Epicodus deemed it necessary. Things had much changed in that distant land since the council had been there last. Not to worry! We can do it! Kendra and Rachael had little idea what they were in for, but went anyways. It was hard, but in the end they can say that they did it. And did it well.",
+  "image": "https://images.unsplash.com/photo-1431887773042-803ed52bed26?q=80&fm=jpg&s=ba76dccf3514a8329a5c17ab176bf00c"
+  }]
+}
