@@ -1,10 +1,9 @@
 
-<h1 class="well" align="center">Adventures in Code</h1>
 
 <div class="row">
   {{#each model as |post-from-template|}}
   <div class="col-md-4" >
-    {{post-tile post=post-from-template}}
+    {{post-tile post=post-from-template destroyPost="destroyPost"}}
   </div>
   {{/each}}
 </div>

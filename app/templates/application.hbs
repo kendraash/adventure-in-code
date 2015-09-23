@@ -1,11 +1,26 @@
 <div class="container">
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <img alt="Brand" src="/images/map.jpg" id="brand-image">
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/"><span class="glyphicon glyphicon-home"></span></a></li>
+        <li><a href="/about"><span class="glyphicon glyphicon-blackboard"></span></a></li>
+        <li><a href="/contact"><span class='glyphicon glyphicon-phone-alt'></span></a></li>
+
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 
   {{outlet}}
-  <div class="well" id="footer">
-    <footer class="text-center">
-      {{#link-to 'about'}}Read more about us{{/link-to}}
-      <br>
-      {{#link-to 'contact'}}Get in touch{{/link-to}}
-    </footer>
-  </div>
+
 </div>
