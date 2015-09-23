@@ -1,10 +1,11 @@
 <div class="container">
 
   {{outlet}}
-
-  <footer>
-    {{#link-to 'about'}}Read more about us{{/link-to}}
-    <br>
-    {{#link-to 'contact'}}Get in touch{{/link-to}}
-  </footer>
+  <div class="well" id="footer">
+    <footer class="text-center">
+      {{#link-to 'about'}}Read more about us{{/link-to}}
+      <br>
+      {{#link-to 'contact'}}Get in touch{{/link-to}}
+    </footer>
+  </div>
 </div>
