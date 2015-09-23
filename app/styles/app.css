@@ -3,5 +3,10 @@ body {
 }
 
 img {
-  width: 150px;
+  width: 320px;
+  height: 217px;
+  margin: 10px;
+  border-style: solid;
+  border-color: #4a80f5;
+  border-width: 5px;
 }

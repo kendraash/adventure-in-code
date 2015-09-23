@@ -1,3 +1,7 @@
 
-<li>{{#link-to 'post' post.id}}{{post.date}}, {{post.title}} By: {{post.author}}{{/link-to}}</li>
+{{#link-to 'post' post.id}}
+  <h3>{{post.title}}</h3>
+  <hr>
+  <div class="author-line">{{post.author}}, {{post.date}}</div>
+{{/link-to}}
 <p><img src={{post.image}}></p>

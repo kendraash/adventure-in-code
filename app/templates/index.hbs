@@ -1,14 +1,10 @@
-<h1>List of Blog posts</h1>
-<div class=row>
 
+<h1 class="well" align="center">List of Blog posts</h1>
+
+<div class="row">
   {{#each model as |post-from-template|}}
   <div class="col-md-4" >
     {{post-tile post=post-from-template}}
   </div>
   {{/each}}
-
 </div>
-
-{{#link-to 'about'}}Read more about us{{/link-to}}
-<br>
-{{#link-to 'contact'}}Get in touch{{/link-to}}
