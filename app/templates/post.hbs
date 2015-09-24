@@ -1,18 +1,24 @@
 <h2>{{model.title}}</h2>
 <h4>{{model.author}}</h4>
-<p>{{model.text}}</p>
-<img src={{model.image}} class="post-images">
-<br>
-
-<ul>
-  {{#each model.comments as |comment|}}
-    By: {{comment.author}}
-    <li>{{comment.date}}, {{comment.text}}</li>
-    {{/each}}
-</ul>
-<br>
-
-<button  {{action 'delete' model}} class="btn btn-warning"><span class="glyphicon glyphicon-trash"></span></button>
-
+<p class="lead">{{model.text}}</p>
 {{update-post model=model update='update'}}
-{{new-comment post=model saveComment="saveComment"}}
+<div class="row">
+  <div class="col-md-6">
+    <img src={{model.image}} class="large-images">
+    <br>
+  </div>
+  <div class="col-md-6">
+    <div class="comments">
+      <h3 class="text-right">Comments</h3>
+      <p class="text-right">{{new-comment post=model saveComment="saveComment"}}</p>
+
+      {{#each model.comments as |comment|}}
+      <p class="text-right"><em>{{comment.author}}</em> on {{comment.date}}</p><br>
+      <p class="text-right"><span class="glyphicon glyphicon-pencil"></span>{{comment.text}}</p>
+      {{/each}}
+      <br>
+    </div>
+  </div>
+</div>
+
+<p class="text-right">Delete Post <button  {{action 'delete' model}}><span class="glyphicon glyphicon-trash"></span></button></p>
