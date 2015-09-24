@@ -18,8 +18,11 @@ export default Ember.Route.extend({
 
     delete(post) {
       if(confirm('Are you sure you want to delete this post?')) {
-        post.get('comments').forEach(function(comment) {
-          comment.destroyRecord();
+
+        post.get('comments').then(function(comments) {
+          comments.forEach(function(comment) {
+            comment.destroyRecord();
+          });
         });
         post.destroyRecord();
         this.transitionTo("index");

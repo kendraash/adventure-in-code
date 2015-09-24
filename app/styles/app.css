@@ -1,18 +1,54 @@
+
 body {
-  background-color: #a7cdf2;
+  background-color: #466d87;
+  color:black;
+  font-family: 'Coustard', serif;
 }
 
 .post-images {
-  width: 320px;
-  height: 217px;
+  width: 300px;
+  height:203px;
   margin: 10px;
   border-style: solid;
-  border-color: #4a80f5;
+  border-color: black;
   border-width: 5px;
 }
 
 #brand-image {
-  height: 38px;
-  padding-bottom: 5px;
-  padding-left: 5px;
+  height: 100px;
+  margin: -33px;
+}
+
+#nav-bar-box {
+  background-color: #9d864c;
+  padding: 20px;
+}
+
+#title{
+  text-align-right;
+  padding-top: 17px;
+  padding-left: 25px;
+}
+
+a{
+  color: black;
+}
+
+hr {
+  border-color: #9d864c;
+  width: 55%;
+  float:left;
+}
+
+#footer {
+  background-color: #9d864c;
+  width: 100%;
+}
+
+#new-post-box {
+
+}
+
+button{
+  background-color: #9d864c;
 }
