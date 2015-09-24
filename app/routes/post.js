@@ -15,13 +15,21 @@ export default Ember.Route.extend({
         post.save();
         this.transitionTo('post');
     },
-    
+
     delete(post) {
-      // debugger;
       if(confirm('Are you sure you want to delete this post?')) {
+        post.get('comments').forEach(function(comment) {
+          comment.destroyRecord();
+        });
         post.destroyRecord();
         this.transitionTo("index");
       }
+    },
+    saveComment(params) {
+      var newComment = this.store.createRecord('comment', params);
+      newComment.save();
+      params.post.save();
+      this.transitionTo('post', params.post);
     }
   }
 });

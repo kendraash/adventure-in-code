@@ -3,6 +3,16 @@
 <p>{{model.text}}</p>
 <img src={{model.image}} class="post-images">
 <br>
+
+<ul>
+  {{#each model.comments as |comment|}}
+    By: {{comment.author}}
+    <li>{{comment.date}}, {{comment.text}}</li>
+    {{/each}}
+</ul>
+<br>
+
 <button  {{action 'delete' model}} class="btn btn-warning"><span class="glyphicon glyphicon-trash"></span></button>
 
 {{update-post model=model update='update'}}
+{{new-comment post=model saveComment="saveComment"}}
